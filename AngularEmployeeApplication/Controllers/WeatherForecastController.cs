@@ -13,6 +13,7 @@ namespace AngularEmployeeApplication.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
+        // Constructor for the WeatherForecastController class
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;

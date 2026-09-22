@@ -1,0 +1,71 @@
+﻿@model WebApplicationDemo.Models.City
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<head>
+    <script src="\lib\jquery\dist\jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script>
+
+    $(document).ready(function () {
+        $("#State_Country_Id").change(function () {
+            //var country = $("select#State_Country_Id option:selected").val();
+            var url = '@Url.Content("~/")' + "City/GetState";
+            var ddlsource = "#State_Country_Id";
+            $.get(url, { countryId: $(ddlsource).val() }, function (data) {
+                var items = '';
+                $("#State_Id").empty();
+                $.each(data, function (i, state) {
+                    items += "<option value='" + state.value + "'>" + state.text + "</option>";
+                });
+                $("#State_Id").html(items);
+            }
+            );
+            var items = "<option value='0'>Select</option>";
+        $("#State_Id").html(items);
+
+        });
+        //var items = "<option value='0'>Select</option>";
+        //$("#State_Id").html(items);
+    });
+    </script>
+
+</head>
+<h1>Edit</h1>
+
+<h4>City</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="City_Id" />
+            <div class="form-group">
+                <label asp-for="City_Name" class="control-label"></label>
+                <input asp-for="City_Name" class="form-control" />
+                <span asp-validation-for="City_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="State.Country.Country_Name" class="control-label"></label>
+                <select asp-for="State.Country_Id" class="form-control" asp-items="@(new SelectList(ViewBag.country,"Country_Id","Country_Name"))"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="State.State_Name" class="control-label"></label>
+                <select asp-for="State_Id" class="form-control" asp-items="@(new SelectList(ViewBag.state,"State_Id","State_Name"))"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

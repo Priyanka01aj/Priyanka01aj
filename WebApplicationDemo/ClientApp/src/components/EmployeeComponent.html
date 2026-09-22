@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<div data-bind="if:currentView()=='list'">
+  <div>
+    <button class="btn btn-primary" data-bind="click:createClick">Create New</button>
+    <h2> Employee</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>FirstName</th>
+          <th>LastName</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody data-bind="foreach: employeeList">
+        <tr>
+          <td data-bind="text: firstName"></td>
+          <td data-bind="text: lastName"></td>
+          <td data-bind="text: phone"></td>
+          <td data-bind="text: email"></td>
+          <td data-bind="text: city.city_Name"></td>
+          <td data-bind="text: city.state.state_Name"></td>
+          <td data-bind="text: city.state.country.country_Name"></td>
+          <td>
+            <button class="btn btn-primary" data-bind="click:$parent.editClick.bind(this)">Edit</button>   |
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-bind="click:$parent.returnIdToDelete.bind(this)">
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <h2 class="modal-title" id="exampleModalLabel">Are you sure you want to remove this?</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bind="click:deleteClick" data-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<div data-bind="if:currentView()=='create'">
+  <div data-bind="template: {name: 'create-employee-template' }"></div>
+</div>

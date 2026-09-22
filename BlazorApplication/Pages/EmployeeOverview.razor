@@ -1,0 +1,33 @@
+﻿@page "/employeeoverview"
+
+<h3>All Employees</h3>
+
+@if (Employees == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{ 
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var emp in Employees)
+                {
+            <tr>
+                <td>@emp.Id</td>
+                <td>@emp.FirstName</td>
+                <td>@emp.LastName</td>
+
+            </tr>
+                }
+        </tbody>
+    </table>
+}
+<button @onclick="QuikAddEmployee" class="btn btn-dark table-btn">&nbsp;&nbsp;+&nbsp;</button>
+<AddEmployee @ref="AddEmployee"></AddEmployee>

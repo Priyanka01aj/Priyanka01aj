@@ -1,0 +1,50 @@
+<template id="create-employee-template">
+  <div data-bind="using:emp">
+    <h2>Employee</h2>
+    <form>
+
+      <div class="form-group">
+        <label for="firstName">First Name </label>
+        <input data-bind="textInput:firstName" type="text" id="firstName" class="form-control" />
+        <span data-bind="validationMessage: firstName" class="text-danger"></span>
+
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name </label>
+        <input data-bind="textInput:lastName" type="text" id="lastName" class="form-control" />
+        <span data-bind="validationMessage: lastName" class="text-danger"></span>
+
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone </label>
+        <input data-bind="textInput:phone" type="text" id="phone" class="form-control" />
+        <span data-bind="validationMessage: phone" class="text-danger"></span>
+
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input data-bind="textInput:email" type="text" id="email" class="form-control" />
+        <span data-bind="validationMessage: email" class="text-danger"></span>
+
+      </div>
+      <div class="form-group">
+        <label for="countryList">Country</label>
+        <select data-bind="options:countryList, optionsText:'country_Name',optionsValue:'country_Id',value:selectedCountry,optionsCaption:'Select',event:{change:changeCountry}" id="country_Id" class="form-control"></select>
+      </div>
+
+      <div class="form-group">
+        <label for="stateList">State</label>
+        <select data-bind="options:stateList, optionsText:'state_Name',optionsValue:'state_Id',value:selectedState,optionsCaption:'Select',event:{change:changeState}" id="state_Id" class="form-control"></select>
+      </div>
+
+      <div class="form-group">
+        <label for="cityList">City</label>
+        <select data-bind="options:cityList, optionsText:'city_Name',optionsValue:'city_Id',value:selectedCity,optionsCaption:'Select'" id="city_Id" class="form-control"></select>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" data-bind="click:saveclickEmployee.bind(this, $parent)">Save</button>
+        <button class="btn btn-primary" data-bind="click:backToList.bind(this,$parent)">Back</button>
+      </div>
+    </form>
+  </div>
+</template>

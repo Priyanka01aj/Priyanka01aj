@@ -1,0 +1,17 @@
+<div id="createPage">
+  <div>
+    <h2>Create New Country</h2>
+  </div>
+  <div data-bind="using : newcountry">
+    <div class="form-group">
+      <label for="country_Name">Country</label>
+      <input data-bind="textInput:country_Name" type="text" id="country_Name" class="form-control" value=""/>
+      <span data-bind="validationMessage: country_Name" class="text-danger"></span>
+    </div>
+ 
+    <div class="form-group">
+      <button class="btn btn-primary" data-bind="click:$parent.saveclickCountry.bind(this, $parents[1])">Save</button>
+      <button class="btn btn-primary" data-bind="click:$parent.backToList.bind(this,$parents[1])">Back</button>
+    </div>
+  </div>
+</div>

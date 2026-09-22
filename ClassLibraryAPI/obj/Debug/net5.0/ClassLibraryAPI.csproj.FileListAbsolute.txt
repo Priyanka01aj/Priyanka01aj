@@ -1,0 +1,12 @@
+C:\Users\priyanka.ajmera\source\repos\WebApplicationDemo\ClassLibraryAPI\bin\Debug\net5.0\ClassLibraryAPI.deps.json
+C:\Users\priyanka.ajmera\source\repos\WebApplicationDemo\ClassLibraryAPI\bin\Debug\net5.0\ClassLibraryAPI.dll
+C:\Users\priyanka.ajmera\source\repos\WebApplicationDemo\ClassLibraryAPI\bin\Debug\net5.0\ref\ClassLibraryAPI.dll
+C:\Users\priyanka.ajmera\source\repos\WebApplicationDemo\ClassLibraryAPI\bin\Debug\net5.0\ClassLibraryAPI.pdb
+C:\Users\priyanka.ajmera\source\repos\WebApplicationDemo\ClassLibraryAPI\obj\Debug\net5.0\ClassLibraryAPI.csproj.AssemblyReference.cache
+C:\Users\priyanka.ajmera\source\repos\WebApplicationDemo\ClassLibraryAPI\obj\Debug\net5.0\ClassLibraryAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\priyanka.ajmera\source\repos\WebApplicationDemo\ClassLibraryAPI\obj\Debug\net5.0\ClassLibraryAPI.AssemblyInfoInputs.cache
+C:\Users\priyanka.ajmera\source\repos\WebApplicationDemo\ClassLibraryAPI\obj\Debug\net5.0\ClassLibraryAPI.AssemblyInfo.cs
+C:\Users\priyanka.ajmera\source\repos\WebApplicationDemo\ClassLibraryAPI\obj\Debug\net5.0\ClassLibraryAPI.csproj.CoreCompileInputs.cache
+C:\Users\priyanka.ajmera\source\repos\WebApplicationDemo\ClassLibraryAPI\obj\Debug\net5.0\ClassLibraryAPI.dll
+C:\Users\priyanka.ajmera\source\repos\WebApplicationDemo\ClassLibraryAPI\obj\Debug\net5.0\ref\ClassLibraryAPI.dll
+C:\Users\priyanka.ajmera\source\repos\WebApplicationDemo\ClassLibraryAPI\obj\Debug\net5.0\ClassLibraryAPI.pdb

@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "WebAPIDemo\\WebAPIDemo.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "WebApplicationDemo\\WebApplicationDemo.csproj",
+        "Action": "Start",
+        "DebugTarget": "IIS Express"
+      }
+    ]
+  }
+]

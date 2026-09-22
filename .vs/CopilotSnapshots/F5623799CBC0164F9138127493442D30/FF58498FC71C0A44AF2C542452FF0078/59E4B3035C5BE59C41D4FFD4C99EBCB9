@@ -1,0 +1,91 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
+using WebApplicationDemo.Models;
+
+namespace WebApplicationDemo.Controllers
+{
+    public class HomeController : Controller
+    {
+        private readonly ILogger<HomeController> _logger;
+        private readonly DemoDbContext _Db;
+
+        public HomeController(ILogger<HomeController> logger,DemoDbContext Db)
+        {
+            _logger = logger;
+            _Db = Db;
+        }
+
+        public IActionResult Index()
+        {
+           
+            return View();
+        }
+        public IActionResult AddNew()
+        {
+
+            return View();
+        }
+
+        public IActionResult Create()
+        {
+            var countries = _Db.Country.ToList();
+            return View(countries);
+        }
+        [HttpPost]
+        public IActionResult AddNew(Country country)
+        {
+            _Db.Country.Add(country);
+            _Db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        
+       
+        
+        public IActionResult Edit(int Id)
+        {
+            if (Id == 0)
+            {
+                return RedirectToAction("Create");
+            }
+            var getcountry = _Db.Country.Where(t=>t.Country_Id==Id).FirstOrDefault();
+            return View(getcountry);
+        }
+        [HttpPost]
+        public IActionResult Edit(Country country)
+        {
+            if (ModelState.IsValid)
+            {
+                _Db.Update(country);
+                _Db.SaveChanges();
+                return RedirectToAction("Create");
+            }
+            return View(country);
+        }
+        public IActionResult Delete(int Id)
+        {
+            
+            
+                var getcountry = _Db.Country.Where(t => t.Country_Id == Id).FirstOrDefault();
+                _Db.Remove(getcountry);
+                _Db.SaveChanges();
+                return RedirectToAction("Create");
+            
+            
+        }
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
+}

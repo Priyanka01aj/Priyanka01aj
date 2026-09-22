@@ -1,0 +1,34 @@
+<div ng-app="">
+  <!--<p>Name: <input type="text" ng-model="emp"></p>-->
+  <!--<span> Name: </span><input [(ngModel)]="oldEmp.Name" /><br /><br />
+  <span> Age: </span><input [(ngModel)]="oldEmp.Age" /><br /><br />
+  <button type="button" value="Push" (click)="addEmployee(oldEmp)">Push</button>-->
+  <h2> Employee</h2>
+  <a class="nav-link text-dark" [routerLink]="['/app-add-employee-component']">Add New</a>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let emps of employees">
+      <tr>
+        <td> {{ emps.firstName }}</td>
+        <td> {{ emps.lastName }}</td>
+        <td> {{ emps.phone }}</td>
+        <td> {{ emps.email }}</td>
+        <td> {{ emps.city?.city_Name }}</td>
+        <td> {{ emps.city?.state?.state_Name }}</td>
+        <td> {{ emps.city?.state?.country?.country_Name }}</td>
+        <td><a class="navbar-brand" [routerLink]="['/app-add-employee-component', emps.id]">Edit</a></td>
+        <td><a [routerLink]="['/app-employee-component']" (click)="Delete(emps.id);">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

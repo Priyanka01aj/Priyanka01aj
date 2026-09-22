@@ -1,0 +1,218 @@
+{
+  "version": 2,
+  "dgSpecHash": "PXEwbzfi5oQ=",
+  "success": true,
+  "projectFilePath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\jquery\\1.4.1\\jquery.1.4.1.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\5.0.0\\microsoft.aspnetcore.razor.language.5.0.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.0.0\\microsoft.codeanalysis.analyzers.3.0.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.codeanalysis.common\\3.8.0\\microsoft.codeanalysis.common.3.8.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.8.0\\microsoft.codeanalysis.csharp.3.8.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.codeanalysis.csharp.workspaces\\3.8.0\\microsoft.codeanalysis.csharp.workspaces.3.8.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.codeanalysis.razor\\5.0.0\\microsoft.codeanalysis.razor.5.0.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\3.8.0\\microsoft.codeanalysis.workspaces.common.3.8.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.9\\microsoft.entityframeworkcore.5.0.9.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.9\\microsoft.entityframeworkcore.abstractions.5.0.9.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.9\\microsoft.entityframeworkcore.analyzers.5.0.9.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.9\\microsoft.entityframeworkcore.design.5.0.9.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.9\\microsoft.entityframeworkcore.relational.5.0.9.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.9\\microsoft.entityframeworkcore.sqlserver.5.0.9.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.9\\microsoft.entityframeworkcore.tools.5.0.9.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.identity.client\\4.14.0\\microsoft.identity.client.4.14.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\5.6.0\\microsoft.identitymodel.jsonwebtokens.5.6.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.identitymodel.logging\\5.6.0\\microsoft.identitymodel.logging.5.6.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.identitymodel.protocols\\5.6.0\\microsoft.identitymodel.protocols.5.6.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\5.6.0\\microsoft.identitymodel.protocols.openidconnect.5.6.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.6.0\\microsoft.identitymodel.tokens.5.6.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\5.0.2\\microsoft.visualstudio.web.codegeneration.5.0.2.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.contracts\\5.0.2\\microsoft.visualstudio.web.codegeneration.contracts.5.0.2.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\5.0.2\\microsoft.visualstudio.web.codegeneration.core.5.0.2.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.design\\5.0.2\\microsoft.visualstudio.web.codegeneration.design.5.0.2.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.entityframeworkcore\\5.0.2\\microsoft.visualstudio.web.codegeneration.entityframeworkcore.5.0.2.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.templating\\5.0.2\\microsoft.visualstudio.web.codegeneration.templating.5.0.2.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.utils\\5.0.2\\microsoft.visualstudio.web.codegeneration.utils.5.0.2.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\5.0.2\\microsoft.visualstudio.web.codegenerators.mvc.5.0.2.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\sammy.js\\0.7.5\\sammy.js.0.7.5.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\system.composition\\1.0.31\\system.composition.1.0.31.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\system.composition.attributedmodel\\1.0.31\\system.composition.attributedmodel.1.0.31.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\system.composition.convention\\1.0.31\\system.composition.convention.1.0.31.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\system.composition.hosting\\1.0.31\\system.composition.hosting.1.0.31.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\system.composition.runtime\\1.0.31\\system.composition.runtime.1.0.31.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\system.composition.typedparts\\1.0.31\\system.composition.typedparts.1.0.31.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\system.identitymodel.tokens.jwt\\5.6.0\\system.identitymodel.tokens.jwt.5.6.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\system.net.http.formatting.extension\\5.2.3\\system.net.http.formatting.extension.5.2.3.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\system.runtime.caching\\4.7.0\\system.runtime.caching.4.7.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.7.0\\system.security.cryptography.protecteddata.4.7.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
+    "C:\\Users\\Rajesh Ajmera\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'jQuery' 1.4.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-2pqj-h3vj-pqgw",
+      "projectPath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "libraryId": "jQuery",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'jQuery' 1.4.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-579v-mp3v-rrw5",
+      "projectPath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "libraryId": "jQuery",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'jQuery' 1.4.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-6c3j-c64m-qhgq",
+      "projectPath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "libraryId": "jQuery",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'jQuery' 1.4.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-jpcq-cgw6-v4j6",
+      "projectPath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "libraryId": "jQuery",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'jQuery' 1.4.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-q4m3-2j7h-f7xw",
+      "projectPath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "libraryId": "jQuery",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'jQuery' 1.4.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-rmxg-73gg-4p98",
+      "projectPath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "libraryId": "jQuery",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Data.SqlClient' 2.0.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-8g2p-5pqh-5jmc",
+      "projectPath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "libraryId": "Microsoft.Data.SqlClient",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'Microsoft.Data.SqlClient' 2.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
+      "projectPath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "libraryId": "Microsoft.Data.SqlClient",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'Microsoft.IdentityModel.JsonWebTokens' 5.6.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
+      "projectPath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "libraryId": "Microsoft.IdentityModel.JsonWebTokens",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'Newtonsoft.Json' 12.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-5crp-9r3c-p9vr",
+      "projectPath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1904",
+      "level": "Warning",
+      "message": "Package 'System.Drawing.Common' 4.7.0 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rxg9-xrhp-64gj",
+      "projectPath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "libraryId": "System.Drawing.Common",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'System.IdentityModel.Tokens.Jwt' 5.6.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
+      "projectPath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "libraryId": "System.IdentityModel.Tokens.Jwt",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'System.Net.Http.Formatting.Extension 5.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\PriyankaAjmera\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo\\WebApplicationDemo.csproj",
+      "libraryId": "System.Net.Http.Formatting.Extension",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

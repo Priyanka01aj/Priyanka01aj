@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.10.12201.205 stable
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationDemo", "WebApplicationDemo\WebApplicationDemo.csproj", "{016DC905-6EC3-4AB0-9DE6-CEDC39762770}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPIDemo", "WebAPIDemo\WebAPIDemo.csproj", "{1C93A9F8-25AB-4A97-B648-BA646346B925}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeLib", "EmployeeLib\EmployeeLib.csproj", "{0540E08C-E73E-4833-9FB6-92602B76C32D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApplication", "BlazorApplication\BlazorApplication.csproj", "{7DECEFB8-A0D1-4352-BDFC-81D1AC5CF862}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularEmployeeApplication", "AngularEmployeeApplication\AngularEmployeeApplication.csproj", "{A0409E83-759C-4CB9-A08F-B0597DCA56D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtDemoApplication", "JwtDemoApplication\JwtDemoApplication.csproj", "{2D20A3B2-8142-4597-9272-41C6F9B1CD02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{016DC905-6EC3-4AB0-9DE6-CEDC39762770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{016DC905-6EC3-4AB0-9DE6-CEDC39762770}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{016DC905-6EC3-4AB0-9DE6-CEDC39762770}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{016DC905-6EC3-4AB0-9DE6-CEDC39762770}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C93A9F8-25AB-4A97-B648-BA646346B925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C93A9F8-25AB-4A97-B648-BA646346B925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C93A9F8-25AB-4A97-B648-BA646346B925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C93A9F8-25AB-4A97-B648-BA646346B925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0540E08C-E73E-4833-9FB6-92602B76C32D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0540E08C-E73E-4833-9FB6-92602B76C32D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0540E08C-E73E-4833-9FB6-92602B76C32D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0540E08C-E73E-4833-9FB6-92602B76C32D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DECEFB8-A0D1-4352-BDFC-81D1AC5CF862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DECEFB8-A0D1-4352-BDFC-81D1AC5CF862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DECEFB8-A0D1-4352-BDFC-81D1AC5CF862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DECEFB8-A0D1-4352-BDFC-81D1AC5CF862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0409E83-759C-4CB9-A08F-B0597DCA56D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0409E83-759C-4CB9-A08F-B0597DCA56D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0409E83-759C-4CB9-A08F-B0597DCA56D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0409E83-759C-4CB9-A08F-B0597DCA56D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D20A3B2-8142-4597-9272-41C6F9B1CD02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D20A3B2-8142-4597-9272-41C6F9B1CD02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D20A3B2-8142-4597-9272-41C6F9B1CD02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D20A3B2-8142-4597-9272-41C6F9B1CD02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCA3AD2F-D942-4B9E-BE42-ECB189B340ED}
+	EndGlobalSection
+EndGlobal

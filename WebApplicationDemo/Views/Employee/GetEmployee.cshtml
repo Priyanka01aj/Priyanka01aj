@@ -1,0 +1,53 @@
+﻿@model WebApplicationDemo.Models.Employee
+
+
+
+@{ Layout = "_Layout"; ViewBag.Title = "Get Employee by Id";}
+
+<h2>Get Employee by Id </h2>
+<h3>@ViewBag.StatusCode</h3>
+<form method="post">
+    <div class="form-group">
+        <label for="Id">Enter ID of Employee</label>
+        <input class="form-control" name="id" />
+    </div>
+    <div class="text-center panel-body">
+        <button type="submit" class="btn btn-sm btn-primary">Get Employee</button>
+        <a asp-action="Index" class="btn btn-sm btn-primary">Back</a>
+    </div>
+</form>
+
+@if (Model != null)
+{
+    <h2>Employee</h2>
+    <table class="table table-sm table-striped table-bordered m-2">
+        <thead>
+
+            <tr>
+                <th>ID</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Mobile</th>
+                <th>Email</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Country</th>
+
+            </tr>
+
+        <tbody>
+            <tr>
+                <td>@Model.Id</td>
+                <td>@Model.FirstName</td>
+                <td>@Model.LastName</td>
+                <td>@Model.Phone</td>
+                <td>@Model.Email</td>
+                <td>@Model.City.City_Name</td>
+                <td>@Model.City.State.State_Name</td>
+                <td>@Model.City.State.Country.Country_Name</td>
+
+            </tr>
+        </tbody>
+
+    </table>
+}

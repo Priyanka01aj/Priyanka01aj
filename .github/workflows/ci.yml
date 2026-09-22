@@ -1,0 +1,35 @@
+name: .NET MVC CI Practice
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    # Note: For 'act' to work smoothly locally, we use a standard Ubuntu runner
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Checkout the project code
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    # 2. Setup the .NET SDK environment
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x' # Change to '9.0.x' or your specific version if needed
+
+    # 3. Restore NuGet dependencies
+    - name: Restore Dependencies
+      run: dotnet restore
+
+    # 4. Build the application in Release mode
+    - name: Build Application
+      run: dotnet build --configuration Release --no-restore
+
+    # 5. Run Unit Tests (if you have a test project)
+    - name: Run Tests
+      run: dotnet test --configuration Release --no-build --verbosity normal

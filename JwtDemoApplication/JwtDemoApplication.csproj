@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Add JWT support: provides Microsoft.IdentityModel.Tokens and JwtSecurityTokenHandler -->
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.30.0" />
+	<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.0" /> 
+  </ItemGroup>
+
+</Project>

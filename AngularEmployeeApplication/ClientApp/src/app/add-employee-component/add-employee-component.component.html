@@ -1,0 +1,90 @@
+
+<div *ngIf="showList === false">
+  <h2 *ngIf="editView === false">Add New Employee</h2>
+  <h2 *ngIf="editView">Edit Employee</h2>
+  <form [formGroup]="registerForm">
+
+    <div class="form-group">
+      <label for="firstName">First Name </label>
+      <input [(ngModel)]="employee!.firstName" type="text" id="firstName" class="form-control" name="firstName" formControlName="firstName" required />
+      <span class="text-danger"
+            *ngIf="registerFormControl.firstName.touched && registerFormControl.firstName.errors?.required">
+        First Name is Required
+      </span>
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name </label>
+      <input [(ngModel)]="employee!.lastName" type="text" id="lastName" class="form-control" name="lastName" formControlName="lastName" required />
+      <span class="text-danger"
+            *ngIf="registerFormControl.lastName.touched && registerFormControl.lastName.errors?.required">
+        Last Name is Required
+      </span>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone </label>
+      <input [(ngModel)]="employee!.phone" type="text" id="phone" class="form-control" name="phone" formControlName="phone"/>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input [(ngModel)]="employee!.email" type="text" id="email" class="form-control" name="email" formControlName="email" required />
+      <span class="text-danger"
+            *ngIf="(registerFormControl.email.touched) && registerFormControl.email.errors?.required">
+        Email is required
+      </span>
+      <span class="text-danger"
+            *ngIf="registerFormControl.email.touched && registerFormControl.email.errors?.email">
+        Enter a valid email address
+      </span>
+    </div>
+
+    <div class="form-group">
+      <label for="countryList">Country</label>
+      <select [(ngModel)]="selectedCountry" id="employee!.city.state.country_Id" class="form-control" (change)="changeCountry($event)" formControlName="country">
+        <option *ngFor="let x of countryList" [value]="x.country_Id">{{x.country_Name}}</option>
+      </select>
+    </div>
+    <br />
+    <div class="form-group">
+      <label for="stateList">State</label>
+      <select [(ngModel)]="selectedState" id="employee!.city.state_Id" class="form-control" (change)="changeState($event)" formControlName="state">
+        <option *ngFor="let x of stateList" [value]="x.state_Id">{{x.state_Name}}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="cityList">City</label>
+      <select [(ngModel)]="selectedCity" id="employee!.cityId" class="form-control" (change)="changeCity($event)" name="cityId" formControlName="cityId">
+        <option *ngFor="let x of cityList" [value]="x.city_Id">{{x.city_Name}}</option>
+      </select>
+    </div>
+    <br />
+
+    <!--<div class="form-group">
+    <label for="stateList">State</label>
+    <select [(ngModel)]="options:stateList, optionsText:'state_Name',optionsValue:'state_Id',value:selectedState,optionsCaption:'Select',event:{change:changeState}" id="state_Id" class="form-control"></select>
+  </div>
+      <div class="form-group">
+      <label for="countryList">Country</label>
+      <select [(ngModel)]="countryList" id="employee!.country_Id" class="form-control">
+        <option *ngFor="let x of countryList">{{x.country_Name}}</option>
+      </select>
+    </div>
+    <br />
+
+  <div class="form-group">
+    <label for="cityList">City</label>
+    <select [(ngModel)]="options:cityList, optionsText:'city_Name',optionsValue:'city_Id',value:selectedCity,optionsCaption:'Select'" id="city_Id" class="form-control"></select>
+  </div>-->
+    <!--<button class="btn btn-primary" value="Back" (click)="backToHome()">Back</button>-->
+
+  </form>
+<div>
+  <button class="btn btn-primary" value="Save" (click)="addEmployee(employee)">{{editView == true ? 'Edit' : 'Save'}}</button>
+  <!--{{emps | json}}-->
+</div>
+  </div>
+<!--<div *ngIf="showList">
+  <app-employee-component></app-employee-component>
+</div>-->

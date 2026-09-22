@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p><a>Team</a>.</p>
+</div>
+<partial name="~/ClientApp/src/components/CreateEmployeeComponent.cshtml" />
+
+<div id="app">
+    @*<div class="row">
+            <div class="col-sm-12 col-lg-7">
+                <person-read-only params="person: person"></person-read-only>
+            </div>
+            <div class="col-sm-12 col-lg-5 pl-lg-5">
+                <person-editable params="person: person"></person-editable>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-lg-7">
+                <product-details></product-details>
+            </div>
+        </div>*@
+    <app-root></app-root>
+</div>
+<script src="~/dist/app.js"></script>

@@ -1,0 +1,11 @@
+<div ng-app="">
+  <!--<p>Name: <input type="text" ng-model="emp"></p>-->
+  
+  <span> Name: </span><input [(ngModel)]="oldEmp.Name" /><br /><br />
+  <span> Age: </span><input [(ngModel)]="oldEmp.Age" /><br /><br />
+  <button type="button" value="Push" (click)="addEmployee(oldEmp)">Push</button>
+  <div *ngFor="let emps of emp">
+    <p>Employee Name: {{ emps.Name }}</p>
+    <p>Employee Age: {{ emps.Age }}
+  </div>
+</div>

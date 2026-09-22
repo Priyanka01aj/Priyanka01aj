@@ -1,0 +1,32 @@
+﻿ @page "/addemployee"
+
+@if (ShowDialog) 
+ {
+<div class="modal bd-example-modal-lg" id="addModal" tabindex="-1" role="dialog" aria-labelledby="admin-modal" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content rounded">
+                                <div class="modal-header">
+                                    <h5 class="modal-title secondary-color" id="exampleModalLabel">Add Employee</h5>
+                                    <button type="button" title="Close" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true" class="icon icon-close" @onclick="@Close"></span>
+                                    </button>
+                                </div>
+                          <div class="modal-body">
+                              <EditForm Model="@Employee" @onclick="@HandleValidSubmit">
+                                    <div class="row">
+                                        <div class="col-md-6 form-group">
+                                            <label for="" class="form-label">First Name:</label>
+                                            <InputText id="Fname" class="form-control" placeholder="First Name" @bind-Value="@Employee.FirstName"/>
+                                            @*<ValidationMessage For="@(()=> Employee.FirstName)" />*@
+                                        </div>      
+                                    </div>
+                                     <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline" data-dismiss="modal" @onclick="@Close">Cancel</button>
+                                    <button type="submit" class="btn btn-primary" id="saveEmployee">Save</button>
+                                </div>
+                                    </EditForm>
+                          </div>
+                            </div>
+                    </div>
+  </div>
+  }

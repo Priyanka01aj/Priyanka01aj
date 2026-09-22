@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model WebApplicationDemo.Models.Country
+@{ Layout = "_Layout"; ViewBag.Title = "Get Country by Id";}
+
+<h2>Get Country by Id </h2>
+<h3>@ViewBag.StatusCode</h3>
+<form method="post">
+    <div class="form-group">
+        <label for="Country_Id">Enter Country ID</label>
+        <input type="text" class="form-control" name="id" size="4"/>
+    </div>
+    <div class="text-center panel-body">
+        <button type="submit" class="btn btn-sm btn-primary">Get Country</button>
+        <a asp-action="Index" class="btn btn-sm btn-primary">Back</a>
+    </div>
+</form>
+
+@if (Model != null)
+{
+    <h2>Country</h2>
+    <table class="table table-sm table-striped table-bordered m-2">
+        <thead>
+           
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+
+                </tr>
+           
+        <tbody>
+            <tr>
+                <td>@Model.Country_Id</td>
+                <td>@Model.Country_Name</td>
+
+            </tr>
+        </tbody>
+            
+    </table>
+}

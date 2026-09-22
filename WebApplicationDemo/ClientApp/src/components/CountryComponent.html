@@ -1,0 +1,31 @@
+<div data-bind="if:currentView()=='list'">
+
+  <div>
+    <button class="btn btn-primary" data-bind="click:createClick">Create New</button>
+    <h2>
+      Country
+    </h2>
+    <table class="table">
+      <thead>
+        <tr><th>
+          Country Name</th></tr>
+      </thead> 
+      <tbody data-bind="foreach: countryList">
+        <tr>
+          <td data-bind="text: country_Name">
+          </td>
+          <td>
+            <button class="btn btn-primary" data-bind="click:$parent.editClick.bind(this)">Edit</button>   |
+            <button class="btn btn-primary" data-bind="click:$parent.deleteClick.bind(this)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+      
+    </table>
+  </div>
+</div>
+
+<div data-bind="if:currentView()=='create'">
+  <create-country-component params="country:countryViewModel"></create-country-component>
+</div>
+

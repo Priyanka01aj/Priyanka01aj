@@ -21,6 +21,7 @@ namespace AngularEmployeeApplication.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            // Generate five sample forecasts for the next five days.
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
